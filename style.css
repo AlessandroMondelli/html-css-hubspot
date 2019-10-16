@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    background-color: blue;
+    height: 100vh;
+}
+
+.menu {
+    width: 100%;
+    background-color: #F5F8FA;
+    border-top: 1px solid #CBD6E2;
+    border-bottom: 1px solid #CBD6E2;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.fix_size {
+    width: 80%;
+    margin: 0 auto;
+    height: 75px;
+}
+
+.l_menu {
+    float: left;
+    width: 80%;
+    font-weight: 600;
+    color: #34485C;
+}
+
+.r_menu {
+    float: right;
+    width: 20%;
+}
+
+.fix, .fix li {
+    list-style-type: none;
+    float: left;
+}
+
+.fix {
+    font-size: 15px;
+    line-height: 70px;
+}
+
+.l_menu .fa-globe {
+    padding-right: 5px;
+}
+
+.l_menu .fa-caret-down{
+     padding: 0 10px;
+     color: #7D98B6;
+     border-right: 1px solid #7D98B6;
+ }
+
+.l_menu li:last-child {
+    padding-left: 10px;
+}
+
+.r_menu .fa-search{
+    color: #00A4BD;
+    padding: 0 20px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.r_menu .fa-search:hover {
+    cursor: pointer;
+}
+
+.r_menu a {
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.r_menu #first_but {
+    border: 1px solid #FF8F73;
+    color: #FF8F73;
+    background-color: #FFFFFF;
+}
+
+.r_menu #sec_but {
+    border: 1px solid transparent;
+    color: #FFFFFF;
+    background-color: #FF8F73;
+    margin-left: 10px;
+}
+
+.prova_fix {
+    height: 1000px;
+}
