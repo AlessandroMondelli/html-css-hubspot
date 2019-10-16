@@ -11,19 +11,17 @@ body {
 .container {
     width: 60%;
     margin: 0 auto;
-    background-color: blue;
-    height: 100vh;
 }
 
-.menu {
-    width: 100%;
-    background-color: #F5F8FA;
+.menu_container {
     border-top: 1px solid #CBD6E2;
     border-bottom: 1px solid #CBD6E2;
+    width: 100%;
 }
 
 .fixed {
     position: fixed;
+    background-color: #F5F8FA;
 }
 
 .fix_size {
@@ -58,11 +56,14 @@ body {
     padding-right: 5px;
 }
 
-.l_menu .fa-caret-down{
-     padding: 0 10px;
-     color: #7D98B6;
-     border-right: 1px solid #7D98B6;
+.fa-caret-down {
+    padding: 0 10px;
+    color: #7D98B6;
  }
+
+.l_menu .fa-caret-down {
+    border-right: 1px solid #7D98B6;
+}
 
 .l_menu li:last-child {
     padding-left: 10px;
@@ -98,6 +99,26 @@ body {
     margin-left: 10px;
 }
 
-.prova_fix {
-    height: 1000px;
+.l_first_menu {
+    float: left;
+    width: 50%;
+}
+
+.l_first_menu img {
+    padding: 20px;
+}
+
+.r_first_menu {
+    float: left;
+    width: 50%;
+}
+
+.r_f_menu {
+    float: right;
+}
+
+.r_f_menu li{
+    font-weight: 700;
+    line-height: 70px;
+    margin: 0 20px;
 }
