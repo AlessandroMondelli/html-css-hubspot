@@ -13,33 +13,28 @@ body {
     margin: 0 auto;
 }
 
-.menu_container {
-    border-top: 1px solid #CBD6E2;
-    border-bottom: 1px solid #CBD6E2;
-    width: 100%;
+.container::after {
+    content:"";
+    display: table;
+    clear: both;
 }
 
 .fixed {
     position: fixed;
     background-color: #F5F8FA;
+    width: 100%;
 }
 
-.fix_size {
-    width: 80%;
-    margin: 0 auto;
-    height: 75px;
+#top_bord {
+    border-top: 1px solid #CBD6E2;
+    border-bottom: 1px solid #CBD6E2;
 }
 
 .l_menu {
     float: left;
-    width: 80%;
+    width: 50%;
     font-weight: 600;
     color: #34485C;
-}
-
-.r_menu {
-    float: right;
-    width: 20%;
 }
 
 .fix, .fix li {
@@ -69,6 +64,11 @@ body {
     padding-left: 10px;
 }
 
+.r_menu {
+    float: right;
+    width: 30%;
+}
+
 .r_menu .fa-search{
     color: #00A4BD;
     padding: 0 20px;
@@ -80,8 +80,8 @@ body {
     cursor: pointer;
 }
 
-.r_menu a {
-    border-radius: 5px;
+a {
+    border-radius: 3px;
     text-decoration: none;
     padding: 5px 10px;
 }
@@ -92,33 +92,103 @@ body {
     background-color: #FFFFFF;
 }
 
-.r_menu #sec_but {
+#default_but {
     border: 1px solid transparent;
     color: #FFFFFF;
     background-color: #FF8F73;
     margin-left: 10px;
 }
 
+#nothing {
+    height: 70px;
+}
+
+#bottom_bord {
+    border-bottom: 1px solid rgba(203,214,226,0.3);
+    height: 85px;
+}
+
 .l_first_menu {
     float: left;
-    width: 50%;
+    width: 40%;
 }
 
 .l_first_menu img {
-    padding: 20px;
+    padding-top: 30px;
 }
 
 .r_first_menu {
     float: left;
-    width: 50%;
+    width: 60%;
 }
 
 .r_f_menu {
-    float: right;
+    float: left;
 }
 
 .r_f_menu li{
     font-weight: 700;
-    line-height: 70px;
+    line-height: 85px;
     margin: 0 20px;
+}
+
+#jumb_color {
+    background-image: linear-gradient(-90deg, #FEF6EF, #FEF0ED)
+}
+
+.jumbo {
+    float: left;
+}
+
+.jumbo_left {
+    float: left;
+    width: 40%;
+    margin-top: 70px;
+}
+
+.jumbo_left h1 {
+    font-weight: 700;
+    font-size: 55px;
+    color: #33475B;
+}
+
+.jumbo_left p {
+    padding: 10px 10px 30px 0;
+    color: #33475B;
+}
+
+.jumbo_left #default_but {
+    padding: 20px 30px;
+    margin: 0;
+}
+
+.jumbo_left p:last-child {
+    padding-top: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    max-width: 45%;
+}
+
+/*#jumbo_img {
+    background-image: url("https://i.postimg.cc/W4tGDrzm/Immagine.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;s
+}*/
+
+#first_sez_top {
+    text-align: center;
+}
+
+
+#first_sez_top img {
+    width: 25%;
+
+}
+
+#first_sez_top h2 {
+    font-weight: 700;
+    color: #33475B;
+    font-size: 30px;
 }
