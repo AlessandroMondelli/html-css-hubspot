@@ -8,9 +8,20 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-.container {
+.menu_container {
     width: 60%;
     margin: 0 auto;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.menu_container::after {
+    content:"";
+    display: table;
+    clear: both;
 }
 
 .container::after {
@@ -177,8 +188,14 @@ a {
     height: 400px;s
 }*/
 
+#first_sez {
+    background-color: #F5F8FA;
+    color: #33475B;
+}
+
 #first_sez_top {
     text-align: center;
+    padding: 50px 0 50px 0;
 }
 
 
@@ -191,4 +208,120 @@ a {
     font-weight: 700;
     color: #33475B;
     font-size: 30px;
+}
+
+#first_sez_top p {
+    font-size: 15px;
+    max-width: 75%;
+    margin-left: 10%;
+    padding-top: 20px;
+}
+
+#f_sez_centr {
+    background-color: #FFFFFF;
+    height: 300px;
+    border: 2px solid rgba(203,214,226,0.3);
+    padding: 50px 100px 50px 100px;
+}
+
+#centr_left {
+    float: left;
+    width: 50%;
+
+}
+
+#centr_right {
+    float: left;
+    width: 50%;
+}
+
+#centr_left *, #centr_right *:not(#img_zone) {
+    float: left;
+}
+
+#img_zone {
+    width: 100%;
+}
+
+#centr_left img {
+    width: 60%;
+}
+
+#centr_left a {
+    margin-left: 55px;
+    margin-top: 25px;
+}
+
+#centr_right p {
+    font-size: 13px;
+    padding: 20px 0 15px 0;
+}
+
+hr {
+    width: 50%;
+    position: relative;
+    top:10px;
+    left: 10px;
+}
+
+.specs span {
+    padding: 10px;
+    font-size: 13px;
+}
+
+.fa-check-circle {
+    color: #FF7A59;
+    padding-right: 5px;
+}
+
+.rect {
+    float: left;
+    width: 30%;
+    background-color: #FFFFFF;
+    border: 2px solid rgba(203,214,226,0.3);
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 3%;
+}
+
+.sty_rect img {
+    height: 100px;
+    padding-top: 10px;
+}
+
+.sty_rect h3 {
+    font-weight: 700;
+    font-size: 25px;
+    padding: 10px 0 10px 0;
+}
+
+.sty_rect p {
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 13px;
+    padding: 10px 0 15px 0;
+    border-bottom: 1px solid rgba(203,214,226,0.5);
+}
+
+.sty_rect h4 {
+    padding: 15px 0 10px 0;
+    font-size: 13px;
+}
+
+.sty_rect ul {
+    list-style-type: none;
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 13px;
+}
+
+.sty_rect #default_but {
+    position: relative;
+    top: 20px;
+}
+
+.test {
+    height: 2000px;
 }
