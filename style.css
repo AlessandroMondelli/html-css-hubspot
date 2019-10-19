@@ -187,7 +187,10 @@ a {
 }
 
 #jumb_color {
-    background-image: linear-gradient(-90deg, #FEF6EF, #FEF0ED)
+    background-image: url("https://i.postimg.cc/W4tGDrzm/Immagine.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
 }
 
 .jumbo {
@@ -222,12 +225,6 @@ a {
     font-weight: 600;
     max-width: 45%;
 }
-
-/*#jumbo_img {
-    background-image: url("https://i.postimg.cc/W4tGDrzm/Immagine.png");
-
-    height: 100px;
-}*/
 
 /*inizio sezioni*/
 
@@ -612,4 +609,88 @@ hr {
 
 .right_end a {
     padding: 10px;
+}
+
+/*CHAT*/
+
+#chat {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+#help {
+    float: right;
+    background-color: #FFFFFF;
+    text-align: center;
+    width: 45%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.1);
+    position: relative;
+}
+
+#help::after {
+    content: '';
+	position: absolute;
+	bottom: 0;
+	left: 90%;
+	width: 0;
+	height: 0;
+	border: 16px solid transparent;
+	border-top-color: #FFFFFF;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -8px;
+	margin-bottom: -16px;
+}
+
+.avatar {
+    float: right;
+    width: 100%;
+    height: 30px;
+}
+
+.avatar img{
+    height: 50px;
+    position: relative;
+    bottom: 20px;
+}
+
+.avatar .fa-times {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: rgb(66, 91, 118);
+}
+
+.avatar .fa-times:hover {
+    cursor: pointer;
+}
+
+#help p {
+    text-align: left;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 15px;
+    max-width: 95%;
+}
+
+#icon_zone {
+    float: right;
+    width: 100%;
+}
+
+#icon {
+    float: right;
+    background-color: rgb(66, 91, 118);
+    border-radius: 50px;
+}
+
+#icon i {
+    color: #FFFFFF;
+    padding: 20px;
+    font-size: 25px;
 }
